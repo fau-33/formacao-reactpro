@@ -1,6 +1,6 @@
-const validator = require("validator");
+import chalk from "chalk";
+// const chalk = import("chalk");
+const log = console.log;
 
-const email = "teste@teste.com";
-const isEmailValid = validator.isEmail(email);
-
-console.log(isEmailValid);
+log(chalk.green("Sucesso!"));
+log(chalk.red.bold("Cuidado!"));
